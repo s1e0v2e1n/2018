@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+
+
+    <title>Document</title>
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanstc.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style>
+        * {
+             font-family: "Roboto", "Noto Sans TC"; 
+            /* font-family: "Rubik"; */
+            box-sizing: border-box;
+        }
+/* <!-- 
+        .title{
+          
+            margin: auto;
+            color: steelblue;
+            text-align: center;
+            font-size: 20px;
+            line-height: 100vh;
+        } --> */
+
+        .full-width {
+            min-width: 480px;
+            width: 100%;
+            margin: auto;
+            overflow: auto;
+
+
+        }
+
+        .fixed-width {
+            width: 80%;
+            margin: auto;
+            /* background-color: lemonchiffon; */
+            height: 90vh;
+            border: auto;
+            margin-top: 10vh;
+        }
+
+        .page1 {
+            background-color: rgb(29, 31, 44);
+            height: 100vh;
+
+        }
+
+        .page2 {
+            background-color: gainsboro;
+            height: 100vh;
+
+
+
+
+
+        }
+
+        .page3 {
+            background-color: lightblue;
+            height: 100vh;
+
+
+        }
+
+        .page4 {
+            background-color: gainsboro;
+            height: 100vh;
+        }
+
+        .page5 {
+            background-color: rgb(26, 176, 196);
+            height: 100vh;
+            /* min-width: 430px; */
+        }
+
+        .page6 {
+            background-color: rgb(29, 31, 44);
+            height: 100vh;
+
+        }
+
+        .boxleft {
+            padding: 1em 0.5em 2em 2em;
+            margin: 0;
+            width: 50%;
+            height: 100%;
+            color: #000000;
+            float: left;
+            /* background-color: aqua; */
+            letter-spacing: 0.5px;
+            display: block;
+            text-align: justify-content;
+        }
+
+        .boxright {
+            padding: 1em 2em 2em 0.5em;
+            margin: 0;
+            color: black;
+            width: 50%;
+            height: 100%;
+            /* background-color: aqua; */
+            float: left;
+            display: block;
+
+
+            overflow: hidden;
+            letter-spacing: 0.5px;
+
+        }
+
+        .boxcontact {
+
+            padding: 4em;
+            margin: 0;
+            color: white;
+            width: 100%;
+            height: 90%;
+            /* background-color: aqua; */
+            float: left;
+            display: block;
+            overflow: hidden;
+
+
+        }
+
+
+        footer {
+            background-color: rgb(29, 31, 44);
+            height: 20vh;
+            color: white;
+            text-align: center;
+            margin: auto;
+            line-height: 20vh;
+            font-size: 12px;
+        }
+
+        p {
+            display: block;
+            padding: 0;
+            border: 0;
+            margin: 0;
+            /* line-height: 22px; */
+            /* letter-spacing: 0px; */
+        }
+
+        h1 {
+            letter-spacing: 1px;
+            line-height: 40px;
+
+        }
+
+        .symbol {
+            width: 100%;
+            height: 60%;
+            font-size: 280px;
+            margin: 0;
+            color: black;
+            border: 0;
+            padding: 0;
+
+            position: relative;
+            text-align: center;
+        }
+
+
+        .boxcontact a:visited,
+        .boxcontact a:link {
+            color: white;
+
+
+            margin: 1em;
+            text-decoration: none;
+        }
+
+        img {
+            width: 80%;
+
+            margin: 0em 2em 5em 0em;
+        }
+
+        span {
+            margin: 0.5em 0 1em 0;
+            float: left;
+        }
+
+
+        .icon {
+            margin: auto;
+            padding: 0;
+            width: fit-content;
+
+        }
+
+
+        @media(max-width: 860px) {
+
+            .boxleft,
+            .boxright,
+            .boxcontact {
+                float: none;
+                width: 100%;
+                height: none;
+                margin: 0;
+                border: 0;
+                padding: 0 0 3em 0;
+                overflow: hidden;
+            }
+
+            .symbol {
+                padding: 0;
+                height: none;
+
+                overflow: hidden;
+                /* line-height:10%; */
+                display: none;
+            }
+
+            .full-width,
+            .fixed-width,
+            page1,
+            page2,
+            page3,
+            .page4,
+            .page5,
+            .page6,
+            footer {
+                overflow: hidden;
+                height: fit-content;
+
+            }
+            .page5 {
+                height: 70vh;
+            }
+            img {
+                margin: 0%;
+                padding: 0;
+
+            }
+            .page3 .boxright {
+                display: none;
+            }
+            .page4 .boxleft {
+                display: none;
+            }
+            span {
+                margin: 0.5em 0 1em 0;
+                border: 0;
+                padding: 0;
+            }
+            /* footer {
+                line-height: 30vh;
+                height: 30vh;
+            } */
+        }
+
+        /* @media(min-width: 450px) {
+
+            .full-width,
+                {
+                width: 450px
+            }
+        } */
+    </style>
+
+
+</head>
+
+<body>
+
+    <!-- <div class="full-width page1">
+
+        <div class="contact">
+
+<!-- 
+              <span class="title"> 
+                  
+                <h5> Be who you want to be.
+
+                </h5>
+               </span> -->
+
+        <!-- </div>  -->
+
+
+
+    </div>
+
+    <div class="full-width page2">
+        <div class="fixed-width">
+            <div class="boxleft">
+
+                <img src="MOGUAI.png" alt="MOGUAI">
+                <br>
+                <br>
+
+            </div>
+
+            <div class="boxright">
+
+                <h1>VISUAL DESIGNER </h1>
+                <span> I 'm Zephyr H ( MOGUAI ) I love design and communication, and in my opinion, designing is an art of communication!
+                    I majored in design and I always strive to break through the normal thinking stereotypes. I enjoy communicating
+                    with people from different fields.I truly believe that our affiliation and working with each other will
+                    bring out the best in both of us! I look forward to the opportunity to be able to work with you in the
+                    very near future!
+                </span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="full-width page3">
+        <div class="fixed-width">
+
+            <div class="boxleft">
+                <h1>UI/UX DESIGNER </h1>
+                <p> I fascinated by technology innovations, product branding and typography. I offer my design skills to build
+                    awesome websites and mobile applications in line with the ambitions of their owners. What I love above
+                    all things is pushing the limits of ergonomics and conception without ever neglecting user experience.
+                    Let's work on great projects together.
+                </p>
+            </div>
+            <div class="boxright">
+
+                <div class="symbol">
+                    ( )
+
+                </div>
+            </div>
+            </p>
+
+
+        </div>
+    </div>
+    <div class="full-width page4">
+        <div class="fixed-width">
+
+
+
+            <div class="boxleft">
+
+                <div class="symbol">
+                    { }
+
+                </div>
+
+            </div>
+            <div class="boxright">
+                <h1>FONT-END DEVELOPER </h1>
+                <p> To go along with my design skills, my toolbox is filled with acronyms you might be afraid of such as HTML5,
+                    CSS3, jQuery and SCSS. I love to see new standards appear and mature allowing the creation of new websites,
+                    each one more advanced and amazing than the previous. Page loading speed, display performance, responsive
+                    layout and SEO optimizations are part of my job, I take these issues at heart from the very beginning.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="full-width page5">
+        <div class="fixed-width">
+            <div class="boxcontact">
+                <h1 style="color:white ">CONTACT NOW</h1>
+
+                <div class="icon">
+
+
+                    <span>
+                        <a href="mailto:moguai.visual@qq.com" target="_blank">
+                            <i class="fas fa-envelope-square fa-4x"></i>
+                        </a>
+                        <a href="tel:886937459695" target="_blank">
+
+                            <i class="fas fa-phone-square fa-4x"></i>
+                        </a>
+                        <a href="http://line.me/ti/p/t7W2bYBxyV" target="_blank">
+                            <i class="fab fa-line fa-4x"></i>
+                        </a>
+                    </span>
+
+                    <span>
+                        <a href="https://www.facebook.com/for.mine.art" target="_blank">
+                            <i class="fab fa-facebook-square fa-4x"></i>
+                        </a>
+
+                        <a href="https://www.flickr.com/photos/for-art/albums" target="_blank">
+                            <i class="fab fa-flickr fa-4x"></i>
+                        </a>
+
+                        <a href="https://www.m-g-v.com" target="_blank">
+                            <i class="fas fa-share-alt-square fa-4x"></i>
+                        </a>
+                    </span>
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <footer>
+
+        MO-GUAI &copy 2012-2018. ALL RIGHTS RESERVED.
+    </footer>
+
+</body>
+
+</html>
